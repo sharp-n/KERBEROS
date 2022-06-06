@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="623.0" prefWidth="667.0" style="-fx-background-color: #808000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="193.0" stroke="OLIVE" strokeType="INSIDE" strokeWidth="2.0" width="667.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="436.0" layoutY="191.0" stroke="OLIVE" strokeType="INSIDE" strokeWidth="2.0" width="335.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="436.0" layoutX="332.0" layoutY="191.0" stroke="OLIVE" strokeType="INSIDE" strokeWidth="2.0" width="335.0" />
+        <Label layoutX="230.0" layoutY="12.0" prefHeight="38.0" prefWidth="48.0" text="Trent">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="159.0" layoutY="195.0" text="Alice">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="481.0" layoutY="195.0" text="Bob">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="sendIDMesABut" layoutX="9.0" layoutY="462.0" mnemonicParsing="false" onAction="#SendIDMesA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Send ID to Trent" />
+        <Label layoutX="387.0" layoutY="119.0" prefHeight="36.0" prefWidth="29.0" text="←">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="encryptMesABut" disable="true" layoutX="9.0" layoutY="503.0" mnemonicParsing="false" onAction="#encryptMesA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Encrypt" />
+        <Button fx:id="sendMesABut" disable="true" layoutX="170.0" layoutY="544.0" mnemonicParsing="false" onAction="#sendMesA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Send" />
+        <Button fx:id="genNumABut" disable="true" layoutX="170.0" layoutY="462.0" mnemonicParsing="false" onAction="#genNumA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Generate number" />
+        <Button fx:id="decryptMesABut" disable="true" layoutX="170.0" layoutY="503.0" mnemonicParsing="false" onAction="#decryptMesA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Decrypt" />
+        <Label layoutX="88.0" layoutY="322.0" prefHeight="36.0" prefWidth="29.0" text="↙">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="191.0" layoutY="323.0" prefHeight="36.0" prefWidth="29.0" text="↘">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Button fx:id="decryptMesBBut" disable="true" layoutX="502.0" layoutY="503.0" mnemonicParsing="false" onAction="#decryptMesB" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Decrypt" />
+        <Button fx:id="encryptMesBBut" disable="true" layoutX="340.0" layoutY="503.0" mnemonicParsing="false" onAction="#encryptMesB" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Encrypt" />
+        <Button fx:id="verMesABut" disable="true" layoutX="9.0" layoutY="544.0" mnemonicParsing="false" onAction="#verMesA" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Verify" />
+        <Button fx:id="verMesBBut" disable="true" layoutX="339.0" layoutY="462.0" mnemonicParsing="false" onAction="#verMesB" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Verify" />
+        <Label alignment="CENTER" contentDisplay="TOP" layoutX="543.0" layoutY="534.0" prefHeight="46.0" prefWidth="79.0" text="by sharp" textAlignment="CENTER" textFill="#00000097">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="sendMesBBut" disable="true" layoutX="339.0" layoutY="544.0" mnemonicParsing="false" onAction="#sendMesB" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Send" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="226.0" layoutX="5.0" layoutY="228.0" stroke="OLIVE" strokeType="INSIDE" width="324.0" />
+        <Label layoutX="14.0" layoutY="233.0" text="Message" textFill="#00000082" />
+        <TextField fx:id="IDaA" layoutX="9.0" layoutY="254.0" prefHeight="26.0" prefWidth="156.0" promptText="IDa" text="35lk69G899345ujv">
+            <font>
+                <Font size="11.0" />
+            </font></TextField>
+        <TextField fx:id="IDbA" layoutX="169.0" layoutY="254.0" prefHeight="26.0" prefWidth="156.0" promptText="IDb" text="joi845klsjdL0E3D">
+            <font>
+                <Font size="11.0" />
+            </font></TextField>
+        <TextField fx:id="timestampAAlice" layoutX="9.0" layoutY="288.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="timestampBAlice" layoutX="169.0" layoutY="288.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valAAlice" layoutX="9.0" layoutY="322.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyAAlice" layoutX="9.0" layoutY="356.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randEncrAAlice" layoutX="9.0" layoutY="390.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number (encrypted)">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valBAlice" layoutX="169.0" layoutY="322.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randAAlice" layoutX="9.0" layoutY="423.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyBAlice" layoutX="170.0" layoutY="356.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randNumBAlice" layoutX="170.0" layoutY="423.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="226.0" layoutX="337.0" layoutY="228.0" stroke="OLIVE" strokeType="INSIDE" width="324.0" />
+        <Button fx:id="genNumBBut" disable="true" layoutX="502.0" layoutY="462.0" mnemonicParsing="false" onAction="#genNumB" prefHeight="32.0" prefWidth="156.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Generate number" />
+        <Label layoutX="347.0" layoutY="233.0" text="Message" textFill="#00000082" />
+        <TextField fx:id="IDaB" layoutX="341.0" layoutY="254.0" prefHeight="26.0" prefWidth="156.0" promptText="IDa">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="IDbB" layoutX="501.0" layoutY="254.0" prefHeight="26.0" prefWidth="156.0" promptText="IDb">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="timestampABob" layoutX="341.0" layoutY="288.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="timestampBBob" layoutX="502.0" layoutY="288.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valABob" layoutX="341.0" layoutY="322.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valBBob" layoutX="501.0" layoutY="322.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyABob" layoutX="341.0" layoutY="356.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyBBob" layoutX="502.0" layoutY="356.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randEncrABob" layoutX="341.0" layoutY="390.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number (encrypted)">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randEncrBBob" layoutX="501.0" layoutY="390.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number (encrypted)">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randABob" layoutX="341.0" layoutY="423.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="randBBob" layoutX="502.0" layoutY="423.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="166.0" layoutX="11.0" layoutY="13.0" stroke="OLIVE" strokeType="INSIDE" width="165.0" />
+        <Label layoutX="44.0" layoutY="19.0" text="Recieved Message" textFill="#00000082" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="KHAKI" height="166.0" layoutX="331.0" layoutY="13.0" stroke="OLIVE" strokeType="INSIDE" width="324.0" />
+        <Button fx:id="sendMesTrentBut" disable="true" layoutX="185.0" layoutY="132.0" mnemonicParsing="false" onAction="#sendMesTrent" prefHeight="32.0" prefWidth="138.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Send Message">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Label layoutX="447.0" layoutY="18.0" text="Generated Message" textFill="#00000082" />
+        <Button fx:id="genMesTrentBut" disable="true" layoutX="185.0" layoutY="53.0" mnemonicParsing="false" onAction="#genMesTrent" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Generate Message">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="IDaFromA" layoutX="16.0" layoutY="70.0" prefHeight="26.0" prefWidth="156.0" promptText="IDa">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="IDbFromA" layoutX="16.0" layoutY="129.0" prefHeight="26.0" prefWidth="156.0" promptText="IDb">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <Label layoutX="22.0" layoutY="48.0" text="Alice`s ID" textFill="#00000082" />
+        <Label layoutX="23.0" layoutY="108.0" text="Bob`s ID" textFill="#00000082" />
+        <TextField fx:id="IDaT" layoutX="335.0" layoutY="41.0" prefHeight="26.0" prefWidth="156.0" promptText="IDa">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="timestampATrent" layoutX="336.0" layoutY="73.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valATrent" layoutX="336.0" layoutY="105.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyATrent" layoutX="336.0" layoutY="137.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="IDbT" layoutX="495.0" layoutY="41.0" prefHeight="26.0" prefWidth="156.0" promptText="IDb">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="timestampBTrent" layoutX="495.0" layoutY="73.0" prefHeight="26.0" prefWidth="156.0" promptText="Timestamp">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="valBTrent" layoutX="495.0" layoutY="106.0" prefHeight="26.0" prefWidth="156.0" promptText="Validity period">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="keyBTrent" layoutX="495.0" layoutY="137.0" prefHeight="26.0" prefWidth="156.0" promptText="Key">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <Button fx:id="encrMesTrentBut" disable="true" layoutX="185.0" layoutY="92.0" mnemonicParsing="false" onAction="#encrMesTrent" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: #BDB76B; -fx-border-color: #808000; -fx-border-width: 1;" text="Encrypt Message">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <TextField fx:id="randEncrNumBAlice" layoutX="169.0" layoutY="390.0" prefHeight="26.0" prefWidth="156.0" promptText="Random number (encrypted)">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </TextField>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKKHAKI" height="46.0" layoutX="1.0" layoutY="581.0" stroke="OLIVE" strokeType="INSIDE" width="332.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKKHAKI" height="46.0" layoutX="333.0" layoutY="581.0" stroke="OLIVE" strokeType="INSIDE" width="333.0" />
+        <TextField fx:id="encrKeyBob" layoutX="340.0" layoutY="588.0" prefHeight="32.0" prefWidth="318.0" promptText="Encryption key" />
+        <TextField fx:id="encrKeyAlice" layoutX="9.0" layoutY="588.0" prefHeight="32.0" prefWidth="317.0" promptText="Encryption key" />
+    </children>
+</AnchorPane>
+

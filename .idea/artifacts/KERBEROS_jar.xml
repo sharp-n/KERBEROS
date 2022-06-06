@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="KERBEROS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/KERBEROS_jar</output-path>
+    <root id="archive" name="KERBEROS.jar">
+      <element id="module-output" name="KERBEROS" />
+    </root>
+  </artifact>
+</component>
